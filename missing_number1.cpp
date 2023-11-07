@@ -118,7 +118,10 @@ for( int i=1 ; i<=n ; i++){
         break;
     }
 }
-
+/*
+Another approach 
+subtract the sum of all no of array from sum of n numbers to get missing no
+*/
 
 
 
