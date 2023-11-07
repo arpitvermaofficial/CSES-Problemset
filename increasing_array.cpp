@@ -121,7 +121,7 @@ for(int i=0 ; i<n-1 ; i++){
  print(count);
 
  /*
-******
+**********
 another approach
  just keep the max no so far and add every no from max no
  */
