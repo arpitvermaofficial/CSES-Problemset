@@ -106,19 +106,20 @@ void solve()
 
 long long n;
 cin>>n;
-cout<<n<<" ";
-while(n>0){
-    if(n%2==0){
-    cout<<n/2<<" ";
-    n=n/2;
-    }
-    else{
-        cout<<n*3+1<<" ";
-        n=n*3+1;
-    }
-    if(n==1)
-    break;
+vector<long long >v(n-1);
+for( int i=0 ; i<=n-2 ; i++){
+    cin >> v[i];
 }
+dbg(v);
+sort( v.begin() , v.end() );
+for( int i=1 ; i<=n ; i++){
+    if( v[i-1]!=i){
+        print( i );
+        break;
+    }
+}
+
+
 
 
 }
