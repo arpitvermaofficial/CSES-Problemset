@@ -112,7 +112,7 @@ void solve()
 
 long long n ;
 cin >> n;
-for( int i=1 ; i<=n ;i++){
+for( long long i=1 ; i<=n ;i++){
     long long ans= ((i*i)*(i*i-1))/2; //total possible ways to place two knight
     if(i>2)
     ans-=4*(i-1)*(i-2);
