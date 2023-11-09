@@ -128,7 +128,7 @@ void solve()
     if(ssum <= sum/2)
     ans = max(ans ,ssum);
    }
-   print(sum - 2*ans);
+   print(sum - 2*ans);//
 
 }
 
