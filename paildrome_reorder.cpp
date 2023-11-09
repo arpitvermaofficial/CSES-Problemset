@@ -102,6 +102,15 @@ bool comp(pair<long long, long long> a, pair<long long, long long> b)
 
 void solve()
 {
+    /* 
+    Approach 
+    paildrome is not possible when string length is odd and also have more than one character
+    whose frequency count is odd
+    else in very case paildrome is possible 
+    case 1 --> length is odd
+    add odd frequency element in mid and add other elements on both side of this element;
+    case 2 --> add element in any order but add same character as a group
+    */
     string s;
     cin >> s;
     int n =s.length();
