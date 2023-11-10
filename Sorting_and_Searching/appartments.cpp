@@ -102,6 +102,33 @@ bool comp(pair<long long, long long> a, pair<long long, long long> b)
 
 void solve()
 {
+    /*
+    Approach
+    sort desired choice and appartments
+    we pick desires choice one by one and search for first appartment for which desired choice -k>=appartment
+    and assign that appartment to person
+    and continue the process
+    */
+    long long n,m,k;
+    cin >> n >> m >> k;
+    vector<long long >a(n);
+    vector<long long >b(m);
+    for(int i=0; i<n; i++)
+    cin >> a[i];
+    for(int i=0; i<m; i++)
+    cin >> b[i];
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    long long ans=0;
+    for(int i=0 ,j=0; i<n; i++) {
+        while(j<m&&b[j]<a[i]-k)
+        j++;
+        if(j<m&&b[j]<=a[i]+k)
+        ans++,j++;
+    }
+
+        print(ans);
     
 
 }
@@ -110,8 +137,8 @@ int main()
 {
     ios_base ::sync_with_stdio(false);
     cin.tie(nullptr);
-    long long t = 1;
-    long long n = 0;
+    // long long t = 1;
+    // long long n = 0;
     // cin >> t;
     // for (int i = 1; i <= t; i++)
     {
