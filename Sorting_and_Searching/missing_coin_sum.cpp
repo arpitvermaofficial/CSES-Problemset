@@ -125,13 +125,12 @@ void solve()
         cin >> v[i];
     }
     sort(v.begin(), v.end());
-    long long pre=v[0];
-    cout<<pre<<" ";
-    for(int i=1;i<n;i++){
-        cout<<pre+v[i]<<" ";
-        pre+=v[i];
+    long long smallestsum=1;
+    
+    for(ll i=0; i<n&&v[i]<=smallestsum; i++) {
+        smallestsum+=v[i];
     }
-   dbg(v);
+    print(smallestsum);
 
 }
 
