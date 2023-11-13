@@ -108,7 +108,7 @@ void solve()
     room is immeditely to be filled
     then we use set to check is for current person arival time is there any room whose
     departure time is less or eual so then we allocate that room to current person
-    we do so by using lower bound 
+    we do so by using lower bound //
     */
     ll n;
     cin >> n;
