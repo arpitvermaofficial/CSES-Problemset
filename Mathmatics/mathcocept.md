@@ -22,6 +22,8 @@ sum of all divisor of any no x=(p1^0+p1^1....)(p2^0+p2^1 ....)... =(geometric su
 ```
 ----
 ```
+C(a/b)=C(b-1/a) +C(b-1/a-1) any binomial coefficent is sum of it top left and right parent
+Hockey Stick Theorem sumation( C(b+i/i)) over 0<=i<=k => C(b+k+1/k)
 
 ```
 
