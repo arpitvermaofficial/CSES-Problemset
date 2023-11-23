@@ -32,6 +32,8 @@ by recurrece realation !n=(n−1)⋅(!(n−1)+!(n−2))
 
 no of ways to distribut b thing bw a => C(a+b-1/b-1)
 
+Ck= (1/k+1) *(2kCk)  this is called Catalan no have many application like valid parenthes string count in string of length n    
+
 ```
 
 
