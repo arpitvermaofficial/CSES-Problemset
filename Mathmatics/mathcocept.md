@@ -34,8 +34,8 @@ no of ways to distribut b thing bw a => C(a+b-1/b-1)
 
 Ck= (1/k+1) *(2kCk)  this is called Catalan no have many application like valid parenthes string count in string of length n    
 
-Burnside's leema theorem of counting object when there is symmnetry 
-    total distinct ways= sumation over 0<=i<=N-1 => ((M^gcd(i,N))/N);
+Burnside's leema theorem of counting object 
+the no of objects eq the average no of symetrical pictures(taken over all symetrics);
 ```
 
 
