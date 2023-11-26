@@ -41,8 +41,8 @@ vector<vector<long long>> mul(vector<vector<long long>> &A,vector<vector<long lo
 }
 void solve()
 {
-	
-	
+
+
 	/*
 	Approach
 	Same as previous but little bit twist of cost
@@ -66,7 +66,7 @@ void solve()
 		graph[u][v]=c;
 	}
     vector<vector<long long>> result(graph.size(),vector<long long>(graph[0].size(),0));
- 
+
 	for(long long i=0;i<graph.size();i++)
 		result[i][i]=1;
 	long long count=1;
