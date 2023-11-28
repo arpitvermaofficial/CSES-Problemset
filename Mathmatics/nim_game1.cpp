@@ -34,6 +34,7 @@ void solve()
     x^=v[i];
    }
    cout << (x?"first":"second") << endl;
+   //
 
 
 }
